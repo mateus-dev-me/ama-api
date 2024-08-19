@@ -33,38 +33,38 @@ Este projeto visa fornecer uma plataforma onde os usuários podem fazer pergunta
 
 ```bash
  .
-├──  internal
-│   ├── 󰒍 api
-│   │   ├──  utils.go
-│   │   └──  api.go
-│   └──  store
-│       └──  pgstore
-│           ├──  models.go
-│           ├──  queries
-│           │   └──  queries.sql
-│           ├──  queries.sql.go
-│           ├──  migrations
-│           │   ├──  tern.conf
-│           │   ├──  002_create_messages_table.sql
-│           │   └──  001_create_rooms_table.sql
-│           ├──  sqlc.yaml
-│           └──  db.go
-├──  docs
-│   ├──  Rooms.postman_collection.json
-│   └──  ama-api-spec.yaml
-├──  cmd
-│   ├──  tools
-│   │   └──  terndotenv
-│   │       └──  main.go
-│   └──  app
-│       └──  main.go
-├──  gen.go
-├──  go.mod
-├──  go.sum
-├──  Dockerfile.yml
-├──  compose.yml
-├──  .env.example.yml
-└──  README.md
+├── internal
+│   ├── api
+│   │   ├── utils.go
+│   │   └── api.go
+│   └── store
+│       └── pgstore
+│           ├── models.go
+│           ├── queries
+│           │   └── queries.sql
+│           ├── queries.sql.go
+│           ├── migrations
+│           │   ├── tern.conf
+│           │   ├── 002_create_messages_table.sql
+│           │   └── 001_create_rooms_table.sql
+│           ├── sqlc.yaml
+│           └── db.go
+├── docs
+│   ├── Rooms.postman_collection.json
+│   └── ama-api-spec.yaml
+├── cmd
+│   ├── tools
+│   │   └── terndotenv
+│   │       └── main.go
+│   └── app
+│       └── main.go
+├── gen.go
+├── go.mod
+├── go.sum
+├── Dockerfile.yml
+├── compose.yml
+├── .env.example.yml
+└── README.md
 ```
 ---
 
@@ -131,7 +131,6 @@ A API estará disponível em `http://localhost:8080/api`
 ## **Contato**
 ---
 
-**Mateus**  
 [![Email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:contato@mateus-dev-me.com.br)  
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?logo=linkedin&logoColor=white)](https://linkedin.com/in/mateus-dev-me)  
 [![Website](https://img.shields.io/badge/Website-4285F4?logo=google-chrome&logoColor=white)](https://mateus-dev-me.com.br)
