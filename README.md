@@ -118,9 +118,9 @@ A API estará disponível em `http://localhost:8080/api`
 
 O arquivo de documentação está em `./internal/api/spec/swagger.json`
 
-[Tag Room](./docs/01.jpeg) 
-[Tag Messages](./docs/02.jpeg) 
-[Tag Replies](./docs/03.jpeg) 
+![Tag Room](./docs/01.jpeg) 
+![Tag Messages](./docs/02.jpeg) 
+![Tag Replies](./docs/03.jpeg) 
 ---
 
 ## **Contribuição**
