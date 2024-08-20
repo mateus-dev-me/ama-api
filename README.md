@@ -31,6 +31,8 @@ Este projeto visa fornecer uma plataforma onde os usuários podem fazer pergunta
  .
 ├── internal
 │   ├── api
+│   │   ├── spec
+│   │   │   └── swagger.json
 │   │   ├── utils.go
 │   │   └── api.go
 │   └── store
@@ -46,8 +48,9 @@ Este projeto visa fornecer uma plataforma onde os usuários podem fazer pergunta
 │           ├── sqlc.yaml
 │           └── db.go
 ├── docs
-│   ├── Rooms.postman_collection.json
-│   └── ama-api-spec.yaml
+│   ├── 01.jpg
+│   ├── 02.jpg
+│   └── 03.jpg
 ├── cmd
 │   ├── tools
 │   │   └── terndotenv
