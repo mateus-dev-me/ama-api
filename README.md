@@ -15,8 +15,6 @@
 6. [Contribuição](#contribuição)
 7. [Contato](#contato)
 
----
-
 ## **Visão Geral do Projeto**
 
 Este projeto visa fornecer uma plataforma onde os usuários podem fazer perguntas e obter respostas. É ideal para cenários onde a interação com a audiência é valorizada, como sessões de perguntas e respostas, fóruns de discussão ou comunidades online.
@@ -26,8 +24,6 @@ Este projeto visa fornecer uma plataforma onde os usuários podem fazer pergunta
 - Criação, leitura, atualização e exclusão (CRUD) de perguntas e respostas.
 - Filtragem e pesquisa de perguntas por tags e categorias.
 - Moderação de perguntas e respostas.
-
----
 
 ## **Estrutura do Projeto**
 
@@ -66,8 +62,6 @@ Este projeto visa fornecer uma plataforma onde os usuários podem fazer pergunta
 ├── .env.example.yml
 └── README.md
 ```
----
-
 ## **Instalação**
 
 ### **Pré-requisitos:**
@@ -101,8 +95,6 @@ Este projeto visa fornecer uma plataforma onde os usuários podem fazer pergunta
     go generate
     ```
 
----
-
 ## **Uso**
 
 ### **Iniciar o Servidor:**
@@ -112,7 +104,6 @@ go run ./cmd/app/main.go
 ```
 A API estará disponível em `http://localhost:8080/api`
 
----
 
 ## Documentação da API
 
@@ -121,7 +112,6 @@ O arquivo de documentação está em `./internal/api/spec/swagger.json`
 ![Tag Room](./docs/01.jpeg) 
 ![Tag Messages](./docs/02.jpeg) 
 ![Tag Replies](./docs/03.jpeg) 
----
 
 ## **Contribuição**
 
