@@ -2,33 +2,32 @@
 
 ![Go Version](https://img.shields.io/badge/go-v1.23.0-blue) ![License](https://img.shields.io/badge/license-MIT-green)
 
-> **Descrição**  
-> Uma API RESTful desenvolvida em Golang para gerenciamento de perguntas e respostas, similar a um sistema AMA (Ask Me Anything). A API permite que usuários façam perguntas e que essas perguntas sejam respondidas pelos administradores.
 
-## **Índice**
+> A REST API developed in Golang for managing questions and answers, similar to an AMA (Ask Me Anything) system. The API allows users to ask questions and have those questions answered by administrators.
 
-1. [Visão Geral do Projeto](#visão-geral-do-projeto)
-2. [Estrutura do Projeto](#estrutura-do-projeto)
-3. [Instalação](#instalação)
-4. [Uso](#uso)
-5. [Documentação da API](#documentação-da-api)
-6. [Contribuição](#contribuição)
-7. [Contato](#contato)
+## **Index**
 
-## **Visão Geral do Projeto**
+1. [Project Overview](#project-overview)
+2. [Project Structure](#project-structure)
+3. [Installation](#installation)
+4. [Usage](#usage)
+5. [API Documentation](#api-documentation)
+6. [Contribution](#contribution)
 
-Este projeto visa fornecer uma plataforma onde os usuários podem fazer perguntas e obter respostas. É ideal para cenários onde a interação com a audiência é valorizada, como sessões de perguntas e respostas, fóruns de discussão ou comunidades online.
+## **Project Overview**
 
-### **Principais Funcionalidades:**
-- Cadastro e autenticação de usuários.
-- Criação, leitura, atualização e exclusão (CRUD) de perguntas e respostas.
-- Filtragem e pesquisa de perguntas por tags e categorias.
-- Moderação de perguntas e respostas.
+This project aims to provide a platform where users can ask questions and get answers. It is ideal for scenarios where audience interaction is valued, such as Q&A sessions, discussion forums, or online communities.
 
-## **Estrutura do Projeto**
+### **Main Features:**
+- User registration and authentication.
+- Creation, reading, updating and deletion (CRUD) of questions and answers.
+- Filtering and searching questions by tags and categories.
+- Moderation of questions and answers.
+  
+## **Project Structure**
 
 ```bash
- .
+.
 ├── internal
 │   ├── api
 │   │   ├── spec
@@ -65,72 +64,62 @@ Este projeto visa fornecer uma plataforma onde os usuários podem fazer pergunta
 ├── .env.example.yml
 └── README.md
 ```
-## **Instalação**
+## **Installation**
 
-### **Pré-requisitos:**
+### **Prerequisites:**
 
-- **Go** (versão 1.23.0 ou superior)
-- **Docker** (para configuração em contêiner)
-- **PostgreSQL** (ou outro banco de dados suportado)
+- **Go** (version 1.23.0 or higher)
+- **Docker** (for containerized setup)
+- **PostgreSQL** (or other supported database)
 
-### **Passos para Instalação:**
+### **Installation Steps:**
 
-1. Clone o repositório:
+1. Clone the repository:
 
     ```bash
     git clone https://github.com/mateus-dev-me/ama-api.git
     cd ama-api
     ```
 
-2. Configure as variáveis de ambiente:
+2. Set environment variables:
 
-    Crie um arquivo `.env` baseado no arquivo `.env.example` e configure suas credenciais e parâmetros do banco de dados.
+Create a `.env` file based on the `.env.example` file and set your credentials and database parameters.
 
-3. Instale as dependências:
+3. Install dependencies:
 
     ```bash
     go mod tidy
     ```
 
-4. Execute as migrações do banco de dados:
+4. Perform database migrations:
 
     ```bash
     go generate
     ```
 
-## **Uso**
+## **Usage**
 
-### **Iniciar o Servidor:**
+### **Start Server:**
 
 ```bash
 go run ./cmd/app/main.go
 ```
-A API estará disponível em `http://localhost:8080/api`
+The API will be available at `http://localhost:8080/api`
 
+## API Documentation
 
-## Documentação da API
-
-O arquivo de documentação está em `./internal/api/spec/swagger.json`
+The documentation file is at `./internal/api/spec/swagger.json`
 
 ![Tag Room](./docs/01.jpeg) 
 ![Tag Messages](./docs/02.jpeg) 
 ![Tag Replies](./docs/03.jpeg) 
 
-## **Contribuição**
+## **Contribution**
 
-1. Faça um fork do projeto.
-2. Crie um branch para sua feature (git checkout -b feature/nova-feature).
-3. Faça commit das suas mudanças (git commit -m 'Adiciona nova feature').
-4. Envie seu branch para o repositório remoto (git push origin feature/nova-feature).
-5. Abra um Pull Request.
-
----
-
-## **Contato**
----
-
-[![Email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:contato@mateus-dev-me.com.br)  
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?logo=linkedin&logoColor=white)](https://linkedin.com/in/mateus-dev-me)  
-[![Website](https://img.shields.io/badge/Website-4285F4?logo=google-chrome&logoColor=white)](https://mateus-dev-me.com.br)
+1. Fork the project.
+2. Create a branch for your feature (git checkout -b feature/nova-feature).
+3. Commit your changes (git commit -m 'Add new feature').
+4. Push your branch to the remote repository (git push origin feature/nova-feature).
+5. Open a Pull Request.
 
 
